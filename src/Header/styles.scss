@@ -1,0 +1,61 @@
+
+header {
+  background-color: #2f302c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 10px;
+        cursor: pointer;
+        font-weight: bold; // Apply to all menu items, including "more"
+
+        &.more {
+          cursor: pointer;
+          position: relative;
+
+          .more-menu {
+            margin-top: 26px;
+            border-radius: 8px;
+            position: absolute;
+            background-color: #2f302c;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            li {
+              padding: 10px;
+            }
+          }
+        }
+        
+
+      }
+    }
+  }
+  #search-input {
+    background-color: rgba(0,0,0,0);
+  }
+
+  // // Media query for responsive design
+  // @media screen and (max-width: 767px) {
+  //   nav {
+  //     ul {
+  //       li:not(.more) {
+  //         display: none;
+  //       }
+
+  //       li.more {
+  //         display: block;
+  //       }
+  //     }
+  //   }
+  // }
+}
